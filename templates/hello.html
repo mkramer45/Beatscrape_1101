@@ -1,0 +1,16 @@
+{% extends "template.html" %}
+{% block content %}
+	<h2> Welcome! You are now logged into Beatscrape.</h2>
+	<a href="/logout">Logout</a>
+	<br />
+	<br />
+	<br />
+	<h3> Beatport Tech House</h3>
+	{% for item in info %}
+	{{ item.Artist }} | {{ item.Song }} | {{ item.Label }} | {{ item.Price }} <br \>
+{% endfor %}
+{% endblock %}
+
+
+
+
